@@ -4,8 +4,9 @@
 
 export PROFILE=~/.bash_profile
 export SCRIPTS=~/scripts
-export VIRTUALENVS=~/.virtualenvs
 export WORKSPACE=~/workspace/sources/
+export VIRTUALENVS=~/.virtualenvs
+export WORKON_HOME=$VIRTUALENVS
 
 
 alias scripts='cd $SCRIPTS'

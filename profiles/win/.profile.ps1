@@ -4,8 +4,9 @@
 
 $PROFILE=$profile
 $SCRIPTS="~\scripts"
-$VIRTUALENVS="~\.virtualenvs"
 $WORKSPACE="~\Workspace"
+$VIRTUALENVS="~\.virtualenvs"
+$WORKON_HOME=$VIRTUALENVS
 
 
 Function scripts {Set-Location -Path $SCRIPTS}
