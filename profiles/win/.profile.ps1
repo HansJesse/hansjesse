@@ -1,6 +1,7 @@
 # Add to Microsoft.PowerShell_profile.ps1 ($profile)
 # . ~/Workspace/hansjesse/profiles/win/.profile
 
+
 $PROFILE=$profile
 $SCRIPTS="~\scripts"
 $VIRTUALENVS="~\.virtualenvs"

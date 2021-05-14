@@ -1,6 +1,7 @@
 # Add to .bash_profile
 # . ~/Workspace/hansjesse/profiles/mac/.profile
 
+
 export PROFILE=~/.bash_profile
 export SCRIPTS=~/scripts
 export VIRTUALENVS=~/.virtualenvs
