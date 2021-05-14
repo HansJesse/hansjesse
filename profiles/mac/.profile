@@ -5,12 +5,11 @@
 export PROFILE=~/.bash_profile
 export SCRIPTS=~/scripts
 export WORKSPACE=~/workspace/sources/
-export VIRTUALENVS=~/.virtualenvs
-export WORKON_HOME=$VIRTUALENVS
+export WORKON_HOME=~/.virtualenvs
 
 
 alias scripts='cd $SCRIPTS'
-alias env='cd $VIRTUALENVS'
+alias env='cd $WORKON_HOME'
 alias gwd='cd $WORKSPACE'
 
 

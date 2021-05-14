@@ -5,10 +5,9 @@
 $PROFILE=$profile
 $SCRIPTS="~\scripts"
 $WORKSPACE="~\Workspace"
-$VIRTUALENVS="~\.virtualenvs"
-$WORKON_HOME=$VIRTUALENVS
+$WORKON_HOME="~\.virtualenvs"
 
 
 Function scripts {Set-Location -Path $SCRIPTS}
-Function env {Set-Location -Path $VIRTUALENVS}
+Function env {Set-Location -Path $WORKON_HOME}
 Function gwd {Set-Location -Path $WORKSPACE}
