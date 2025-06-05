@@ -1,0 +1,43 @@
+# Installation
+# For mac zsh, add to ~/.zshrc
+# source ~/workspace/sources/hansjesse/profiles/mac/.hans_profile
+
+autoload -U colors && colors
+
+
+function greeting {
+    echo ""
+    echo -e "${MAGENTA}- - - - - - ${YELLOW}- - - - - - - - - - - - - - - - - - - - - - - -${NC}"
+    echo
+    echo -e "  Hi, ${YELLOW}$(whoami)${NC}!"
+    echo -e "  It is ${MAGENTA}$(date +"%D")${NC}"
+    echo
+    echo -e "${MAGENTA}- - - - - - ${YELLOW}- - - - - - - - - - - - - - - - - - - - - - - -${NC}"
+}
+
+
+function purge {
+    echo
+    rm -rf ~/Downloads/*
+    echo -e "...Downloads files deleted."
+    rm -rf ~/Desktop/*
+    echo -e "...Desktop files deleted."
+    echo -e "${YELLOW}Purging completed.${NC}"
+    echo
+}
+
+# Environment Variables
+export WORKSPACE=~/workspace/sources/
+export SCRIPTS=~/workspace/sources/scripts/
+export WORKON_HOME=~/.virtualenvs
+
+# Aliases
+alias env='cd $WORKON_HOME'
+alias gwd='cd $WORKSPACE'
+
+# Path
+export PATH=$PATH:$SCRIPTS
+PS1="%{$fg[yellow]%}%n%{$reset_color%} %{$fg[red]%}%~ %{$reset_color%}%% "
+
+# Main
+greeting
