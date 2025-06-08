@@ -7,12 +7,12 @@ autoload -U colors && colors
 
 function greeting {
     echo ""
-    echo -e "${MAGENTA}- - - - - - ${YELLOW}- - - - - - - - - - - - - - - - - - - - - - - -${NC}"
+    echo -e "$fg[red]- - - - - - $fg[yellow]- - - - - - - - - - - - - - - - - - - - - - - -$reset_color"
     echo
-    echo -e "  Hi, ${YELLOW}$(whoami)${NC}!"
-    echo -e "  It is ${MAGENTA}$(date +"%D")${NC}"
+    echo -e "  Hi, $fg[yellow]$(whoami)! $reset_color"
+    echo -e "  It is $fg[red]$(date +"%D") $reset_color"
     echo
-    echo -e "${MAGENTA}- - - - - - ${YELLOW}- - - - - - - - - - - - - - - - - - - - - - - -${NC}"
+    echo -e "$fg[red]- - - - - - $fg[yellow]- - - - - - - - - - - - - - - - - - - - - - - -$reset_color"
 }
 
 
