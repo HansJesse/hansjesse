@@ -39,5 +39,19 @@ alias gwd='cd $WORKSPACE'
 export PATH=$PATH:$SCRIPTS
 PS1="%{$fg[yellow]%}%n%{$reset_color%} %{$fg[red]%}%~ %{$reset_color%}%% "
 
+# Minecraft Server
+function nirgendwo {
+    cd ~/Minecraft/nirgendwo/
+    # java -Xmx1024M -Xms1024M -jar ~/Minecraft/nirgendwo/server.1.21.8.jar nogui
+    java -Xmx2G -jar ~/Minecraft/nirgendwo/fabric-server-mc.1.21.8-loader.0.17.2-launcher.1.1.0.jar nogui
+    
+}
+
+function whatismyip {
+    echo ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}' 
+    # curl ifconfig.me
+    # echo
+}
+
 # Main
 greeting
